@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>預約查詢 | Zero Zero Bakery</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/hamburgers.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>
+                <a href="index.html" class="header-logo"><img src="img/logo.png" alt="Zero Zero"></a>
+                <nav class="normal_nav">
+                    <ul class="header-site_tour">
+                        <li>
+                            <a href="about.html">關於我們</a>
+                        </li>
+                        <li>
+                            <a href="news.html">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="product.html">烘焙體驗</a>
+                        </li>
+                        <li>
+                            <a href="reservation.html" class="active">預約查詢</a>
+                        </li>
+                        <li>
+                            <a href="discussion.html">問題討論</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header-right">
+                    <li>
+                        <form class="search_form">
+                            <input type="search" placeholder="找商品" class="search" required>
+                            <button type="submit" class="search_item">
+                                <span class="material-icons">search</span>
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span class="material-icons">person</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </li>
+                </ul>
+                <button id="hamberger" class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <nav class="rwd_nav" style="display:none">
+                    <ul class="header-site_tour">
+                        <li>
+                            <a href="about.html">關於我們</a>
+                        </li>
+                        <li>
+                            <a href="news.html">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="product.html">烘焙體驗</a>
+                        </li>
+                        <li>
+                            <a href="reservation.html">預約查詢</a>
+                        </li>
+                        <li>
+                            <a href="discussion.html">問題討論</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                    <div class="rwd_search">
+                        <form>
+                            <input type="search" placeholder="找商品" class="search" required>
+                            <button type="submit" class="search_item">
+                                <span class="material-icons">search</span>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="topic">
+                <p>預約查詢</p>
+            </div>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">首頁</a>
+                </li>
+                <li>預約查詢</li>
+            </ol>
+
+            <div class="reservation">
+                <form class="reservation-confirm">
+                    <div class="reservation-confirm-title" >
+                        <p>預約查詢</p>
+                    </div>
+                    <div class="reservation-confirm-info">
+                        <div class="cellphone">
+                            <p >手機號碼</p>
+                            <input type="tel" id="cellphone" onkeyup="value = this.value.replace(/[^0-9]/g, '')" maxlength="10" placeholder="請輸入手機號碼" required>
+                        </div>
+                        <div class="email">
+                            <p >E-Mail</p>
+                            <input type="email" id="email" placeholder="請輸入E-Mail" required>
+                        </div>
+                        <div class="click">
+                            <button onclick="result()">查詢</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <footer>
+                <div class="contact">
+                    <div class="contact-info">
+                        <p>Zero Zero Bakery</p>
+                        <div class="line"></div>
+                        <ul class="contact-info-top">
+                            <li>
+                                <span class="material-icons">watch_later</span>
+                                <p>10:00~21:00</p>
+                            </li>
+                            <li>
+                                <span class="material-icons">home</span>
+                                <p>106台北市大安區新生南路二段1號</p>
+                            </li>
+                        </ul>
+                        <ul class="contact-info-bottom">
+                            <li>
+                                <span class="material-icons">call</span>
+                                <p>(02)2700-3830</p>
+                            </li>
+                            <li>
+                                <span class="material-icons">local_post_office</span>
+                                <p>contact@zerozerobakery.com.tw</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <p>訂閱我們</p>
+                        <div class="line"></div>
+                        <form>
+                            <input type="email" placeholder="E-Mail..." required>
+                            <button>訂閱</button>
+                        </form>
+                    </div>
+                </div>
+                <ul class="social-media">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                            <i class="fa fa-instagram" aria-hidden="true"></a>
+                        </i>
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li>© 2021 Zero Zero Bakery . All Rights Reserved.</li>
+                    <li>Tibame TFD101 學生展示作品</li>
+                </ul>
+            </footer>
+
+        </div>
+		<script src="js/main.js"></script>
+    </body>
+
+</html>

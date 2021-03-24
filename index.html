@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>首頁 | Zero Zero Bakery</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<a href="index.html" class="header-logo"><img src="img/logo.png" alt="Zero Zero"></a>
+			<nav class="normal_nav">
+				<ul class="header-site_tour">
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="news.html">最新消息</a></li>
+					<li><a href="product.html">烘焙體驗</a></li>
+					<li><a href="reservation.html">預約查詢</a></li>
+					<li><a href="discussion.html">問題討論</a></li>
+				</ul>
+			</nav>
+			<ul class="header-right">
+				<li>
+					<form  class="search_form">
+						<input type="search" placeholder="找商品" class="search" required>
+						<button type="submit" class="search_item">
+							<span class="material-icons">search</span>
+						</button>
+					</form>
+				</li>
+				<li>
+					<a href="login.html">
+						<span class="material-icons">person</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="material-icons">shopping_cart</span>
+					</a>
+				</li>
+			</ul>
+			<button id="hamberger" class="hamburger hamburger--slider" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<nav class="rwd_nav" style="display:none">
+				<ul class="header-site_tour">
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="news.html">最新消息</a></li>
+					<li><a href="product.html">烘焙體驗</a></li>
+					<li><a href="reservation.html">預約查詢</a></li>
+					<li><a href="discussion.html">問題討論</a></li>
+					<li>
+				</ul>
+				<div class="rwd_search">
+					<form method="POST">
+						<input type="search" placeholder="找商品" class="search" required>
+						<button type="submit" class="search_item">
+							<span class="material-icons">search</span>
+						</button>
+					</form>
+				</div>
+			</nav>
+		</header>
+
+		<section class="kv">
+			<p>Make Your Own Dessert</p>
+		</section>
+
+		<section class="news">
+			<h1>NEWS</h1>
+			<div class="news-main">
+				<a href="news-detail.html"><img src="img/news_1.jpg" alt=""></a>
+				<div class="news-content">
+					<h3 class="time">2021/02/09</h3>
+					<h2 class="title">西洋情人節特別企劃</h2>
+					<p class="content">2/14
+						當天兩人同行，即可以優惠價格NT$1314體驗西洋情人節限定-初戀的滋味、草莓生巧克力塔NT$520~立即預訂，來場充滿愛意的甜點體驗吧！...</p>
+					<a href="news-detail.html" class="more">MORE</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="about">
+			<h1>ABOUT US</h1>
+			<ul class="about-main">
+				<li data-aos="flip-left">
+					<div class="about-main-img">
+						<a href="about.html"><img src="img/zz-1.jpeg" alt=""></a>
+					</div>
+					<h2>眾多甜點任君選擇</h2>
+					<p>zero zero提供近100種烘焙體驗，從中式到西式，在這裡您都能找到並創造出屬於自己的甜點。</p>
+				</li>
+				<li data-aos="flip-left">
+					<div class="about-main-img">
+						<a href="about.html"><img src="img/zz-2.jpg" alt=""></a>
+					</div>
+					<h2>食材設備一應俱全</h2>
+					<p>提供嚴選新鮮食材，並採用專業頂級設備，讓您能夠用得安心、吃得放心、學得開心。</p>
+				</li>
+				<li data-aos="flip-left">
+					<div class="about-main-img">
+						<a href="about.html"><img src="img/zz-3.jpeg" alt=""></a>
+					</div>
+					<h2>優良師資環境舒適</h2>
+					<p>鄰近大安森林公園，擁有乾淨清幽的環境。並由專業職人老師帶領，讓您輕鬆上手，享受動手做的樂趣。</p>
+				</li>
+			</ul>
+		</section>
+		<section class="hightlight">
+			<h1>熱門課程<br>Most Popular Courses</h1>
+			<ul class="course">
+				<li>
+					<a href="product-detail-darkchocolatecake.html">
+						<img src="img/course_1.jpg" alt="">
+						<h2>黑巧克力蛋糕</h2>
+						<p>巧克力是快樂的製造者，此款易入門的蛋糕，能帶給你整天的快樂。</p>
+					</a>
+				</li>
+				<li>
+					<a href="product-detail-cheesecake.html">
+						<img src="img/course_2.jpg" alt="">
+						<h2>起司蛋糕</h2>
+						<p>營養美味，讓人嘴角忍不住上揚的起司蛋糕，Just do it!</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/course_3.jpg" alt="">
+						<h2>抹茶奶凍捲</h2>
+						<p>鬆軟滑溜的抹茶蛋糕包裹著香醇的抹茶奶凍，心也不自覺沉澱下來。</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/course_4.jpg" alt="">
+						<h2>提拉米蘇</h2>
+						<p>Tiramisu，原意帶我走。請您一同將美味、愛、和幸福帶走。</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/course_5.jpg" alt="">
+						<h2>草莓慕斯</h2>
+						<p>淺淺的粉紅色草莓慕斯，擺上鮮紅欲滴的草莓，舀一匙，綿密口感入喉~</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/course_6.jpg" alt="">
+						<h2>巴黎草莓</h2>
+						<p>慕斯林奶油餡留在舌尖上的濃郁，被草莓的酸甜化開，絕佳風味。</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/course_7.jpg" alt="">
+						<h2>極地冰山</h2>
+						<p>冰淇淋蛋糕，體現了造型藝術與時尚美味的完美結合。</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/course_8.jpg" alt="">
+						<h2>聖誕馬卡龍</h2>
+						<p>美麗的外表和令人陶醉的口感，一起製作這款經典法式甜點吧~</p>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/course_9.jpg" alt="">
+						<h2>蝶舞翩翩</h2>
+						<p>甜美漂亮的造型蛋糕，難度略高，但值得挑戰。</p>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+		<section class="member">
+			<div class="member-bottom">
+				<a href="login.html">立即加入</a>
+			</div>
+		</section>
+
+		<footer>
+			<div class="contact">
+				<div class="contact-info">
+					<p>Zero Zero Bakery</p>
+					<div class="line"></div>
+					<ul class="contact-info-top">
+						<li>
+							<span class="material-icons">watch_later</span>
+							<p>10:00~21:00</p>
+						</li>
+						<li>
+							<span class="material-icons">home</span>
+							<p>106台北市大安區新生南路二段1號</p>
+						</li>
+					</ul>
+					<ul class="contact-info-bottom">
+						<li>
+							<span class="material-icons">call</span>
+							<p>(02)2700-3830</p>
+						</li>
+						<li>
+							<span class="material-icons">local_post_office</span>
+							<p>contact@zerozerobakery.com.tw</p>
+						</li>
+					</ul>
+				</div>
+				<div class="subscribe">
+					<p>訂閱我們</p>
+					<div class="line"></div>
+					<form>
+						<input type="email" placeholder="E-Mail..." required>
+						<button>訂閱</button>
+					</form>
+				</div>
+			</div>
+			<ul class="social-media">
+				<li>
+					<a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"><i
+							class="fa fa-facebook" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter"
+							aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i
+							class="fa fa-instagram" aria-hidden="true"></a></i>
+				</li>
+			</ul>
+			<ul class="copyright">
+				<li>© 2021 Zero Zero Bakery . All Rights Reserved.</li>
+				<li>Tibame TFD101 學生展示作品</li>
+			</ul>
+		</footer>
+
+	</div>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/main.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script>
+
+		$(".course").slick({
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			dots: true,
+			responsive: [
+				{
+					breakpoint: 1199,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2,
+					}
+				},
+				{
+					breakpoint: 760,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						arrows: false,
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>

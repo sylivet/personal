@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>文章 | Zero Zero Bakery</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<form id="popup1" style="display:none">
+			<div class="popupReply">
+				<div class="close" onclick=openpopup() title="關閉">
+					<span class="material-icons">highlight_off</span>
+				</div>
+				<textarea name="content" id="editor" rows="10" cols="80"></textarea>
+				<button>發表回覆</button>
+				<button>保存草稿</button>
+			</div>
+		</form>
+		<header>
+			<a href="index.html" class="header-logo"><img src="img/logo.png" alt="Zero Zero"></a>
+			<nav class="normal_nav">
+				<ul class="header-site_tour">
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="news.html">最新消息</a></li>
+					<li><a href="product.html">烘焙體驗</a></li>
+					<li><a href="reservation.html">預約查詢</a></li>
+					<li><a href="discussion.html">問題討論</a></li>
+				</ul>
+			</nav>
+			<ul class="header-right">
+				<li>
+					<form  class="search_form">
+						<input type="search" placeholder="找商品" class="search" required>
+						<button type="submit" class="search_item">
+							<span class="material-icons">search</span>
+						</button>
+					</form>
+				</li>
+				<li>
+					<a href="login.html">
+						<span class="material-icons">person</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="material-icons">shopping_cart</span>
+					</a>
+				</li>
+			</ul>
+			<button id="hamberger" class="hamburger hamburger--slider" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<nav class="rwd_nav" style="display:none">
+				<ul class="header-site_tour">
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="news.html">最新消息</a></li>
+					<li><a href="product.html">烘焙體驗</a></li>
+					<li><a href="reservation.html">預約查詢</a></li>
+					<li><a href="discussion.html" class="active">問題討論</a></li>
+					<li>
+				</ul>
+				<div class="rwd_search">
+					<form method="POST">
+						<input type="search" placeholder="找商品" class="search" required>
+						<button type="submit" class="search_item">
+							<span class="material-icons">search</span>
+						</button>
+					</form>
+				</div>
+			</nav>
+		</header>
+
+		<div class="topic">
+			<p>問題討論</p>
+		</div>
+		<ol class="breadcrumb">
+			<li><a href="index.html">首頁</a></li>
+			<li><a href="discussion.html">問題討論</a></li>
+			<li>文章</li>
+		</ol>
+
+		<div class="sharing">
+			<div class="sharing-main">
+				<div class="sharing-top">
+					<p class="floor">1F</p>
+					<div class="sharing-topTitle">
+						<h1>如何製作草莓大福</h1>
+					</div>
+					<div class="sharing-topInfo">
+						<div class="sharing-topInfo-left">
+							<p>2021-02-11 13:20</p>
+							<p class="a"><a href="#">落落</a></p>
+						</div>
+						<div class="sharing-topInfo-right">
+							<div class="sharing-topInfo-right-1">
+								<p class="good">18</p>
+								<p class="bad">0</p>
+							</div>
+							<div class="sharing-topInfo-right-2">
+								<p class="n">666</p>
+								<p class="r">2</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sharing-content">
+					<img src="img/discussion-1.jpg" alt=""><br>
+					<p>1. 糯米粉，玉米澱粉和白砂糖放在一個盆裡。<br>
+						2. 倒入牛奶，攪拌至無顆粒狀態。<br>
+						3. 倒進一個可以蒸的碗裡，水開後，大火蒸25分鐘。<br>
+						4. 準備又香又甜的大草莓！<br></p>
+					<img src="img/discussion-2.jpg" alt=""><br>
+					<p>5. 蒸好後，熱麵團裡放奶油。<br>
+						6. 融化後用手揉勻，時間可以久一點，口感更好！<br>
+						7. 取一小團糯米團，包住草莓。<br></p>
+					<img src="img/discussion-3.jpg" alt=""><br>
+					<p>8. 草莓大福完成！<br></p>
+					<img src="img/discussion-4.jpg" alt=""><br>
+				</div>
+				<div class="sharing-bottom">
+					<div class="sharing-bottom-left">
+						<span class="material-icons" title="推">thumb_up_off_alt</span>
+						<span>18</span>
+						<span class="material-icons" title="噓">thumb_down_off_alt</span>
+						<span>0</span>
+					</div>
+					<div class="sharing-bottom-right">
+						<span class="material-icons" title="回覆" onclick=openpopup()>chat</span>
+						<span class="material-icons bookmarks" title="收藏">bookmarks</span>
+						<span class="material-icons" title="分享" onClick="copyUrl()">share</span>
+						<span class="material-icons" title="舉報">flag</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="replyArea">
+				<p class="floor">2F</p>
+				<div class="replyArea-top">
+					<img src="img/alice.png" alt="愛麗絲">
+					<div class="replyArea-top-bottom">
+						<h3><a href="#">愛麗絲</a></h3>
+						<p>這就是我要的草莓大福。</p>
+					</div>
+				</div>
+				<div class="replyArea-down">
+					<div class="replyArea-left">
+						<p>2021-02-14 14:42</p>
+					</div>
+					<div class="replyArea-right">
+						<span class="material-icons" title="推">thumb_up_off_alt</span>
+						<span>0</span>
+						<span class="material-icons" title="噓">thumb_down_off_alt</span>
+						<span>0</span>
+						<span class="material-icons" title="回覆" onclick=openpopup()>chat</span>
+						<span class="material-icons" title="舉報">flag</span>
+					</div>
+				</div>
+			</div>
+			<div class="replyArea">
+				<p class="floor">3F</p>
+				<div class="replyArea-top">
+					<img src="img/TTC.png" alt="TTC">
+					<div class="replyArea-top-bottom">
+						<h3><a href="#">TTC</a></h3>
+						<p>看得我都餓了。</p>
+					</div>
+				</div>
+				<div class="replyArea-down">
+					<div class="replyArea-left">
+						<p>2021-03-10 00:50</p>
+					</div>
+					<div class="replyArea-right">
+						<span class="material-icons" title="推">thumb_up_off_alt</span>
+						<span>0</span>
+						<span class="material-icons" title="噓">thumb_down_off_alt</span>
+						<span>0</span>
+						<span class="material-icons" title="回覆" onclick=openpopup()>chat</span>
+						<span class="material-icons" title="舉報">flag</span>
+					</div>
+				</div>
+				<div class="replyReply">
+					<div class="replyReply-top">
+						<img src="img/NT.png" alt="NT">
+						<div class="replyReply-top-bottom">
+							<h3><a href="#">台幣戰士</a></h3>
+							<p>請我。</p>
+						</div>
+					</div>
+					<div class="replyReply-down">
+						<div class="replyReply-down-left">
+							<p>2021-03-10 13:14</p>
+						</div>
+						<div class="replyReply-down-right">
+							<span class="material-icons" title="推">thumb_up_off_alt</span>
+							<span>0</span>
+							<span class="material-icons" title="噓">thumb_down_off_alt</span>
+							<span>0</span>
+							<span class="material-icons" title="回覆" onclick=openpopup()>chat</span>
+							<span class="material-icons" title="舉報">flag</span>
+						</div>
+					</div>
+				</div>
+				<div class="replyReply">
+					<div class="replyReply-top">
+						<img src="img/TTC.png" alt="TTC">
+						<div class="replyReply-top-bottom">
+							<h3><a href="#">TTC</a></h3>
+							<p>作夢。</p>
+						</div>
+					</div>
+					<div class="replyReply-down">
+						<div class="replyReply-down-left">
+							<p>2021-03-10 13:15</p>
+						</div>
+						<div class="replyReply-down-right">
+							<span class="material-icons" title="推">thumb_up_off_alt</span>
+							<span>0</span>
+							<span class="material-icons" title="噓">thumb_down_off_alt</span>
+							<span>0</span>
+							<span class="material-icons" title="回覆" onclick=openpopup()>chat</span>
+							<span class="material-icons" title="舉報">flag</span>
+						</div>
+					</div>
+				</div>
+				<div class="replyReply">
+					<div class="replyReply-top">
+						<img src="img/stranger.png" alt="stranger">
+						<div class="replyReply-top-bottom">
+							<h3><a href="#">訪客</a></h3>
+							<p>瘦身黑科技，神奇瘦身粉末，1個月健康瘦。胖子必看健康減肥秘方，純天然不反彈。<br><a href="https://youtu.be/uoqJy_AEt-E"
+									target="_blank" rel="noreferrer noopener">https://youtu.be/uoqJy_AEt-E</a>
+							</p>
+						</div>
+					</div>
+					<div class="replyReply-down">
+						<div class="replyReply-down-left">
+							<p>2021-03-10 18:21</p>
+						</div>
+						<div class="replyReply-down-right">
+							<span class="material-icons" title="推">thumb_up_off_alt</span>
+							<span>0</span>
+							<span class="material-icons" title="噓">thumb_down_off_alt</span>
+							<span>0</span>
+							<span class="material-icons" title="回覆" onclick=openpopup()>chat</span>
+							<span class="material-icons" title="舉報">flag</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="pagination">
+				<li><a class="active" href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">›</a></li>
+				<li><a href="#">»</a></li>
+			</ul>
+		</div>
+
+		<footer>
+			<div class="contact">
+				<div class="contact-info">
+					<p>Zero Zero Bakery</p>
+					<div class="line"></div>
+					<ul class="contact-info-top">
+						<li>
+							<span class="material-icons">watch_later</span>
+							<p>10:00~21:00</p>
+						</li>
+						<li>
+							<span class="material-icons">home</span>
+							<p>106台北市大安區新生南路二段1號</p>
+						</li>
+					</ul>
+					<ul class="contact-info-bottom">
+						<li>
+							<span class="material-icons">call</span>
+							<p>(02)2700-3830</p>
+						</li>
+						<li>
+							<span class="material-icons">local_post_office</span>
+							<p>contact@zerozerobakery.com.tw</p>
+						</li>
+					</ul>
+				</div>
+				<div class="subscribe">
+					<p>訂閱我們</p>
+					<div class="line"></div>
+					<form>
+						<input type="email" placeholder="E-Mail..." required>
+						<button>訂閱</button>
+					</form>
+				</div>
+			</div>
+			<ul class="social-media">
+				<li>
+					<a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"><i
+							class="fa fa-facebook" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter"
+							aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i
+							class="fa fa-instagram" aria-hidden="true"></a></i>
+				</li>
+			</ul>
+			<ul class="copyright">
+				<li>© 2021 Zero Zero Bakery . All Rights Reserved.</li>
+				<li>Tibame TFD101 學生展示作品</li>
+			</ul>
+		</footer>
+
+	</div>
+	<script src="js/main.js"></script>
+	<script src="ckeditor5-build-classic/ckeditor.js"></script>
+	<script>
+		ClassicEditor.create(document.querySelector('#editor'))
+			.catch(error => {
+				console.error(error);
+			});
+	</script>
+</body>
+
+</html>

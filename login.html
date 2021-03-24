@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>登入註冊 | Zero Zero Bakery</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="index.html" class="header-logo"
+          ><img src="img/logo.png" alt="Zero Zero"
+        /></a>
+      </header>
+      <div class="login">
+        <div class="container">
+          <div id="signUp" class="-none">
+            <form >
+              <h1>註冊會員</h1>
+              <div class="socialLogin">
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+                <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+              <input type="text" placeholder="姓名" />
+              <input type="email" placeholder="電子郵件" />
+              <input type="password" placeholder="密碼" />
+              <button>註冊</button>
+              <a class="ghost" onclick="logIn()">登入會員</a>
+            </form>
+          </div>
+          <div id="signIn">
+            <form >
+              <h1>登入會員</h1>
+              <div class="socialLogin">
+                <a href="#"
+                  ><i class="fa fa-facebook" aria-hidden="true"></i
+                ></a>
+                <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+              <input type="email" placeholder="電子郵件" />
+              <input type="password" placeholder="密碼" />
+              <a href="#" onclick="prompt('請輸入你的電子郵件信箱')"
+                >忘記密碼？</a
+              >
+              <button>登入</button>
+              <a class="ghost" onclick="logIn()">註冊會員</a>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <ul class="copyright">
+          <li>© 2021 Zero Zero Bakery . All Rights Reserved.</li>
+          <li>Tibame TFD101 學生展示作品</li>
+        </ul>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>問題討論 | Zero Zero Bakery</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<a href="index.html" class="header-logo"><img src="img/logo.png" alt="Zero Zero"></a>
+			<nav class="normal_nav">
+				<ul class="header-site_tour">
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="news.html">最新消息</a></li>
+					<li><a href="product.html">烘焙體驗</a></li>
+					<li><a href="reservation.html">預約查詢</a></li>
+					<li><a href="discussion.html" class="active">問題討論</a></li>
+				</ul>
+			</nav>
+			<ul class="header-right">
+				<li>
+					<form  class="search_form">
+						<input type="search" placeholder="找商品" class="search" required>
+						<button type="submit" class="search_item">
+							<span class="material-icons">search</span>
+						</button>
+					</form>
+				</li>
+				<li>
+					<a href="login.html">
+						<span class="material-icons">person</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="material-icons">shopping_cart</span>
+					</a>
+				</li>
+			</ul>
+			<button id="hamberger" class="hamburger hamburger--slider" type="button">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<nav class="rwd_nav" style="display:none">
+				<ul class="header-site_tour">
+					<li><a href="about.html">關於我們</a></li>
+					<li><a href="news.html">最新消息</a></li>
+					<li><a href="product.html">烘焙體驗</a></li>
+					<li><a href="reservation.html">預約查詢</a></li>
+					<li><a href="discussion.html">問題討論</a></li>
+					<li>
+				</ul>
+				<div class="rwd_search">
+					<form method="POST">
+						<input type="search" placeholder="找商品" class="search" required>
+						<button type="submit" class="search_item">
+							<span class="material-icons">search</span>
+						</button>
+					</form>
+				</div>
+			</nav>
+		</header>
+
+		<div class="topic">
+			<p>問題討論</p>
+		</div>
+		<ol class="breadcrumb">
+			<li><a href="index.html">首頁</a></li>
+			<li>問題討論</li>
+		</ol>
+
+		<div class="forum">
+			<div class="add" onclick=addnewpost()><span title="新增文章" class="material-icons">note_add</span></div>
+			<div id="new-post" style="display:none">
+				<form>
+					<div class="newpost-title">
+						<select>
+							<option disabled selected hidden>選擇本篇文章分類</option>
+							<option>烘焙知識</option>
+							<option>作法分享</option>
+							<option>擺盤技術</option>
+							<option>其他</option>
+						</select>
+						<input type="text" placeholder="請輸入文章標題" required>
+					</div>
+					<div class="newpost-main">
+						<textarea name="content" id="editor" rows="10" cols="80"></textarea>
+					</div>
+					<div class="newpost-release">
+						<button>發表文章</button>
+						<button>保存草稿</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="posts">
+				<div class="posts-top">
+					<select class="posts-sort">
+						<option disabled selected hidden>所有分類</option>
+						<option>烘焙知識</option>
+						<option>作法分享</option>
+						<option>擺盤技術</option>
+						<option>其他</option>
+					</select>
+					<select class="posts-order">
+						<option disabled selected hidden>排序方式</option>
+						<option>最新發表</option>
+						<option>最新回覆</option>
+						<option>最多收藏</option>
+					</select>
+				</div>
+				<ul class="postList">
+					<li class="thead">
+						<ol class="tr">
+							<li class="heading">文章標題</li>
+							<li class="sort">分類</li>
+							<li class="author">作者</li>
+							<li class="browse">瀏覽</li>
+							<li class="reply">回覆</li>
+							<li class="final-post">最後發表</li>
+						</ol>
+					</li>
+					<li class="tbody">
+						<ol class="tr">
+							<li class="heading" data-title="文章標題"><span class="material-icons bookmarks" title="收藏">bookmarks</span><a href="discussion-detail.html">如何製作草莓大福</a></li>
+							<li class="sort" data-title="分類"><a href="#">作法分享</a></li>
+							<li class="author" data-title="作者"><a href="#">落落</a></li>
+							<li class="browse" data-title="瀏覽">666</li>
+							<li class="reply" data-title="回覆">2</li>
+							<li class="final-post" data-title="最後發表">2021-02-11 13:20</li>
+						</ol>
+						<ol class="tr">
+							<li class="heading" data-title="文章標題"><span class="material-icons bookmarks" title="收藏">bookmarks</span><a href="#">芒果布丁千層</a></li>
+							<li class="sort" data-title="分類"><a href="#">作法分享</a></li>
+							<li class="author" data-title="作者"><a href="#">神馬</a></li>
+							<li class="browse" data-title="瀏覽">87</li>
+							<li class="reply" data-title="回覆">0</li>
+							<li class="final-post" data-title="最後發表">2021-02-05 08:07</li>
+						</ol>
+						<ol class="tr">
+							<li class="heading" data-title="文章標題"><span class="material-icons bookmarks" title="收藏">bookmarks</span><a href="#">切派要用冷刀還是熱刀</a></li>
+							<li class="sort" data-title="分類"><a href="#">烘焙知識</a></li>
+							<li class="author" data-title="作者"><a href="#">Aspoir</a></li>
+							<li class="browse" data-title="瀏覽">1k</li>
+							<li class="reply" data-title="回覆">11</li>
+							<li class="final-post" data-title="最後發表">2021-02-01 08:43</li>
+						</ol>	
+						<ol class="tr">
+							<li class="heading" data-title="文章標題"><span class="material-icons bookmarks" title="收藏">bookmarks</span><a href="#">烤盤放入烤箱中的位置會影響成品嗎</a></li>
+							<li class="sort" data-title="分類"><a href="#">烘焙知識</a></li>
+							<li class="author" data-title="作者"><a href="#">某疊字</a></li>
+							<li class="browse" data-title="瀏覽">123</li>
+							<li class="reply" data-title="回覆">6</li>
+							<li class="final-post" data-title="最後發表">2021-01-15 10:25</li>
+						</ol>
+						<ol class="tr">
+						<li class="heading" data-title="文章標題"><span class="material-icons bookmarks" title="收藏">bookmarks</span><a href="#">打蛋白霜容易失敗的原因是什麼</a></li>
+						<li class="sort" data-title="分類"><a href="#">烘焙知識</a></li>
+						<li class="author" data-title="作者"><a href="#">TTC</a></li>
+						<li class="browse" data-title="瀏覽">55</li>
+						<li class="reply" data-title="回覆">2</li>
+						<li class="final-post" data-title="最後發表">2021-01-13 14:31</li>
+						</ol>
+					</li>				
+				</ul>
+			</div>
+			<ul class="pagination">
+				<li><a class="active" href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">›</a></li>
+				<li><a href="#">»</a></li>
+			</ul>
+		</div>
+
+		<footer>
+			<div class="contact">
+				<div class="contact-info">
+					<p>Zero Zero Bakery</p>
+					<div class="line"></div>
+					<ul class="contact-info-top">
+						<li>
+							<span class="material-icons">watch_later</span>
+							<p>10:00~21:00</p>
+						</li>
+						<li>
+							<span class="material-icons">home</span>
+							<p>106台北市大安區新生南路二段1號</p>
+						</li>
+					</ul>
+					<ul class="contact-info-bottom">
+						<li>
+							<span class="material-icons">call</span>
+							<p>(02)2700-3830</p>
+						</li>
+						<li>
+							<span class="material-icons">local_post_office</span>
+							<p>contact@zerozerobakery.com.tw</p>
+						</li>
+					</ul>
+				</div>
+				<div class="subscribe">
+					<p>訂閱我們</p>
+					<div class="line"></div>
+					<form>
+						<input type="email" placeholder="E-Mail..." required>
+						<button>訂閱</button>
+					</form>
+				</div>
+			</div>
+			<ul class="social-media">
+				<li>
+					<a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i class="fa fa-instagram" aria-hidden="true"></a></i>
+				</li>
+			</ul>
+			<ul class="copyright">
+				<li>© 2021 Zero Zero Bakery . All Rights Reserved.</li>
+				<li>Tibame TFD101 學生展示作品</li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<script src="js/main.js"></script>
+	<script src="ckeditor5-build-classic/ckeditor.js"></script>
+	<script>
+		ClassicEditor.create(document.querySelector('#editor'))
+			.catch(error => {
+				console.error(error);
+			});
+	</script>
+
+</body>
+
+</html>
