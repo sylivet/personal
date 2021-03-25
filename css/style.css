@@ -175,7 +175,8 @@ header {
 .normal_nav .header-site_tour a:hover {
   color: #862633;
 }
-.normal_nav .header-site_tour a.active {
+.normal_nav .header-site_tour a.active,
+.rwd_nav .header-site_tour a.active {
   color: #aa8066;
 }
 
@@ -273,7 +274,7 @@ header {
 }
 
 footer {
-  font-size: 14px;
+  font-size: 14px !important;
   color: white;
   background-color: black;
 }
@@ -1010,7 +1011,11 @@ figure img {
   margin-right: 60px;
   margin-top: 10px;
 }
-
+.order a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+}
 .order:before {
   content: "排序：";
 }
@@ -1020,7 +1025,6 @@ figure img {
   display: flex;
   flex-basis: 120px;
   border-right: 2px solid black;
-  cursor: pointer;
 }
 
 .rwd_order {

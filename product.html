@@ -1,268 +1,317 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-	<title>課程列表 | Zero Zero Bakery</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
-	<link rel="stylesheet" href="css/hamburgers.min.css">
-	<link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        <title>課程列表 | Zero Zero Bakery</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="Shortcut Icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/hamburgers.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
-<body>
-	<div class="wrapper">
-		<header>
-			<a href="index.html" class="header-logo"><img src="img/logo.png" alt="Zero Zero"></a>
-			<nav class="normal_nav">
-				<ul class="header-site_tour">
-					<li><a href="about.html">關於我們</a></li>
-					<li><a href="news.html">最新消息</a></li>
-					<li><a href="product.html" class="active">烘焙體驗</a></li>
-					<li><a href="reservation.html">預約查詢</a></li>
-					<li><a href="discussion.html">問題討論</a></li>
-				</ul>
-			</nav>
-			<ul class="header-right">
-				<li>
-					<form  class="search_form">
-						<input type="search" placeholder="找商品" class="search" required>
-						<button type="submit" class="search_item">
-							<span class="material-icons">search</span>
-						</button>
-					</form>
-				</li>
-				<li>
-					<a href="login.html">
-						<span class="material-icons">person</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span class="material-icons">shopping_cart</span>
-					</a>
-				</li>
-			</ul>
-			<button id="hamberger" class="hamburger hamburger--slider" type="button">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</button>
-			<nav class="rwd_nav" style="display:none">
-				<ul class="header-site_tour">
-					<li><a href="about.html">關於我們</a></li>
-					<li><a href="news.html">最新消息</a></li>
-					<li><a href="product.html">烘焙體驗</a></li>
-					<li><a href="reservation.html">預約查詢</a></li>
-					<li><a href="discussion.html">問題討論</a></li>
-					<li>
-				</ul>
-				<div class="rwd_search">
-					<form method="POST">
-						<input type="search" placeholder="找商品" class="search" required>
-						<button type="submit" class="search_item">
-							<span class="material-icons">search</span>
-						</button>
-					</form>
-				</div>
-			</nav>
-		</header>
+    <body>
+        <div class="wrapper">
+            <header>
+                <a href="index.html" class="header-logo"><img src="img/logo.png" alt="Zero Zero"></a>
+                <nav class="normal_nav">
+                    <ul class="header-site_tour">
+                        <li>
+                            <a href="about.html">關於我們</a>
+                        </li>
+                        <li>
+                            <a href="news.html">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="product.html" class="active">烘焙體驗</a>
+                        </li>
+                        <li>
+                            <a href="reservation.html">預約查詢</a>
+                        </li>
+                        <li>
+                            <a href="discussion.html">問題討論</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="header-right">
+                    <li>
+                        <form class="search_form">
+                            <input type="search" placeholder="找商品" class="search" required>
+                            <button type="submit" class="search_item">
+                                <span class="material-icons">search</span>
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span class="material-icons">person</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">shopping_cart</span>
+                        </a>
+                    </li>
+                </ul>
+                <button id="hamberger" class="hamburger hamburger--slider" type="button">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+                <nav class="rwd_nav" style="display:none">
+                    <ul class="header-site_tour">
+                        <li>
+                            <a href="about.html">關於我們</a>
+                        </li>
+                        <li>
+                            <a href="news.html">最新消息</a>
+                        </li>
+                        <li>
+                            <a href="product.html" class="active">烘焙體驗</a>
+                        </li>
+                        <li>
+                            <a href="reservation.html">預約查詢</a>
+                        </li>
+                        <li>
+                            <a href="discussion.html">問題討論</a>
+                        </li>
+                        <li></li>
+                    </ul>
+                    <div class="rwd_search">
+                        <form method="POST">
+                            <input type="search" placeholder="找商品" class="search" required>
+                            <button type="submit" class="search_item">
+                                <span class="material-icons">search</span>
+                            </button>
+                        </form>
+                    </div>
+                </nav>
+            </header>
 
-		<div class="topic">
-			<p>烘焙體驗</p>
-		</div>
-		<ol class="breadcrumb">
-			<li><a href="index.html">首頁</a></li>
-			<li>課程列表</li>
-		</ol>
+            <div class="topic">
+                <p>烘焙體驗</p>
+            </div>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.html">首頁</a>
+                </li>
+                <li>課程列表</li>
+            </ol>
 
-		<div class="productlist">
-			<ul class="order">
-				<li>
-					<span class="material-icons">local_fire_department</span>
-					<p>熱門度</p>
-				</li>
-				<li>
-					<span class="material-icons">grade</span>
-					<p>難度高到低</p>
-				</li>
-				<li>
-					<span class="material-icons">grade</span>
-					<p>難度低到高</p>
-				</li>
-				<li>
-					<span class="material-icons">attach_money</span>
-					<p>價格高到低</p>
-				</li>
-				<li>
-					<span class="material-icons">attach_money</span>
-					<p>價格低到高</p>
-				</li>
-			</ul>
-			<div class="rwd_order">
-				<select>
-					<option disabled selected hidden>排序方式</option>
-					<option>熱門度</option>
-					<option>難度高到低</option>
-					<option>難度低到高</option>
-					<option>價格高到低</option>
-					<option>價格低到高</option>
-				</select>
-			</div>
+            <div class="productlist">
+                <ul class="order">
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">local_fire_department</span>
+                            <p>熱門度</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">grade</span>
+                            <p>難度高到低</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">grade</span>
+                            <p>難度低到高</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">attach_money</span>
+                            <p>價格高到低</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="material-icons">attach_money</span>
+                            <p>價格低到高</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="rwd_order">
+                    <select>
+                        <option disabled selected hidden>排序方式</option>
+                        <option>熱門度</option>
+                        <option>難度高到低</option>
+                        <option>難度低到高</option>
+                        <option>價格高到低</option>
+                        <option>價格低到高</option>
+                    </select>
+                </div>
 
 
-			<ul class="productlist-product">
-				<li>
-					<a href="product-detail-darkchocolatecake.html">
-						<div class="product_img">
-							<img src="img/course_1.jpg" alt="">
-							<div class="img-left">
-								<p>90mins</p>
-								<p>$630 / 1條</p>
-							</div>
-							<div class="img-right">★</div>
-						</div>
-					</a>
-					<h2>黑巧克力蛋糕</h2>
-				</li>
-				<li>
-					<a href="product-detail-cheesecake.html">
-						<div class="product_img">
-							<img src="img/course_2.jpg" alt="">
-							<div class="img-left">
-								<p>90mins</p>
-								<p>$750 / 6吋</p>
-							</div>
-							<div class="img-right">★★</div>
-						</div>
-					</a>
-					<h2>起司蛋糕</h2>
-				</li>
-				<li>
-					<a href="#">
-						<div class="product_img">
-							<img src="img/course_3.jpg" alt="">
-							<div class="img-left">
-								<p>90mins</p>
-								<p>$700 / 1條</p>
-							</div>
-							<div class="img-right">★</div>
-						</div>
-					</a>
-					<h2>抹茶奶凍捲</h2>
-				</li>
-				<li>
-					<a href="#">
-						<div class="product_img">
-							<img src="img/course_4.jpg" alt="">
-							<div class="img-left">
-								<p>60mins</p>
-								<p>$360 / 4吋</p>
-							</div>
-							<div class="img-right">★★★★</div>
-						</div>
-					</a>
-					<h2>提拉米蘇</h2>
-				</li>
-				<li>
-					<a href="#">
-						<div class="product_img">
-							<img src="img/course_5.jpg" alt="">
-							<div class="img-left">
-								<p>90mins</p>
-								<p>$700 / 1條</p>
-							</div>
-							<div class="img-right">★★★</div>
-						</div>
-					</a>
-					<h2>草莓慕斯</h2>
-				</li>
-				<li>
-					<a href="#">
-						<div class="product_img">
-							<img src="img/course_6.jpg" alt="">
-							<div class="img-left">
-								<p>120mins</p>
-								<p data->$1680 / 8吋</p>
-							</div>
-							<div class="img-right">★★★★★</div>
-						</div>
-					</a>
+                <ul class="productlist-product">
+                    <li>
+                        <a href="product-detail-darkchocolatecake.html">
+                            <div class="product_img">
+                                <img src="img/course_1.jpg" alt="">
+                                <div class="img-left">
+                                    <p>90mins</p>
+                                    <p>$630 / 1條</p>
+                                </div>
+                                <div class="img-right">★</div>
+                            </div>
+                        </a>
+                        <h2>黑巧克力蛋糕</h2>
+                    </li>
+                    <li>
+                        <a href="product-detail-cheesecake.html">
+                            <div class="product_img">
+                                <img src="img/course_2.jpg" alt="">
+                                <div class="img-left">
+                                    <p>90mins</p>
+                                    <p>$750 / 6吋</p>
+                                </div>
+                                <div class="img-right">★★</div>
+                            </div>
+                        </a>
+                        <h2>起司蛋糕</h2>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="product_img">
+                                <img src="img/course_3.jpg" alt="">
+                                <div class="img-left">
+                                    <p>90mins</p>
+                                    <p>$700 / 1條</p>
+                                </div>
+                                <div class="img-right">★</div>
+                            </div>
+                        </a>
+                        <h2>抹茶奶凍捲</h2>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="product_img">
+                                <img src="img/course_4.jpg" alt="">
+                                <div class="img-left">
+                                    <p>60mins</p>
+                                    <p>$360 / 4吋</p>
+                                </div>
+                                <div class="img-right">★★★★</div>
+                            </div>
+                        </a>
+                        <h2>提拉米蘇</h2>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="product_img">
+                                <img src="img/course_5.jpg" alt="">
+                                <div class="img-left">
+                                    <p>90mins</p>
+                                    <p>$700 / 1條</p>
+                                </div>
+                                <div class="img-right">★★★</div>
+                            </div>
+                        </a>
+                        <h2>草莓慕斯</h2>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="product_img">
+                                <img src="img/course_6.jpg" alt="">
+                                <div class="img-left">
+                                    <p>120mins</p>
+                                    <p data->$1680 / 8吋</p>
+                                </div>
+                                <div class="img-right">★★★★★</div>
+                            </div>
+                        </a>
 
-					<h2>巴黎草莓</h2>
-				</li>
-			</ul>
-			<ul class="pagination">
-				<li><a class="active" href="#">1</a></li>
-				<li><a href="#">2</a></li>
-				<li><a href="#">3</a></li>
-				<li><a href="#">4</a></li>
-				<li><a href="#">5</a></li>
-				<li><a href="#">›</a></li>
-				<li><a href="#">»</a></li>
-			</ul>
-		</div>
+                        <h2>巴黎草莓</h2>
+                    </li>
+                </ul>
+                <ul class="pagination">
+                    <li>
+                        <a class="active" href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">›</a>
+                    </li>
+                    <li>
+                        <a href="#">»</a>
+                    </li>
+                </ul>
+            </div>
 
-		<footer>
-			<div class="contact">
-				<div class="contact-info">
-					<p>Zero Zero Bakery</p>
-					<div class="line"></div>
-					<ul class="contact-info-top">
-						<li>
-							<span class="material-icons">watch_later</span>
-							<p>10:00~21:00</p>
-						</li>
-						<li>
-							<span class="material-icons">home</span>
-							<p>106台北市大安區新生南路二段1號</p>
-						</li>
-					</ul>
-					<ul class="contact-info-bottom">
-						<li>
-							<span class="material-icons">call</span>
-							<p>(02)2700-3830</p>
-						</li>
-						<li>
-							<span class="material-icons">local_post_office</span>
-							<p>contact@zerozerobakery.com.tw</p>
-						</li>
-					</ul>
-				</div>
-				<div class="subscribe">
-					<p>訂閱我們</p>
-					<div class="line"></div>
-					<form>
-						<input type="email" placeholder="E-Mail..." required>
-						<button>訂閱</button>
-					</form>
-				</div>
-			</div>
-			<ul class="social-media">
-				<li>
-					<a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener"><i
-							class="fa fa-facebook" aria-hidden="true"></i></a>
-				</li>
-				<li>
-					<a href="https://twitter.com/" target="_blank" rel="noreferrer noopener"><i class="fa fa-twitter"
-							aria-hidden="true"></i></a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener"><i
-							class="fa fa-instagram" aria-hidden="true"></a></i>
-				</li>
-			</ul>
-			<ul class="copyright">
-				<li>© 2021 Zero Zero Bakery . All Rights Reserved.</li>
-				<li>Tibame TFD101 學生展示作品</li>
-			</ul>
-		</footer>
+            <footer>
+                <div class="contact">
+                    <div class="contact-info">
+                        <p>Zero Zero Bakery</p>
+                        <div class="line"></div>
+                        <ul class="contact-info-top">
+                            <li>
+                                <span class="material-icons">watch_later</span>
+                                <p>10:00~21:00</p>
+                            </li>
+                            <li>
+                                <span class="material-icons">home</span>
+                                <p>106台北市大安區新生南路二段1號</p>
+                            </li>
+                        </ul>
+                        <ul class="contact-info-bottom">
+                            <li>
+                                <span class="material-icons">call</span>
+                                <p>(02)2700-3830</p>
+                            </li>
+                            <li>
+                                <span class="material-icons">local_post_office</span>
+                                <p>contact@zerozerobakery.com.tw</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <p>訂閱我們</p>
+                        <div class="line"></div>
+                        <form>
+                            <input type="email" placeholder="E-Mail..." required>
+                            <button>訂閱</button>
+                        </form>
+                    </div>
+                </div>
+                <ul class="social-media">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                            <i class="fa fa-instagram" aria-hidden="true"></a>
+                        </i>
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li>© 2021 Zero Zero Bakery . All Rights Reserved.</li>
+                    <li>Tibame TFD101 學生展示作品</li>
+                </ul>
+            </footer>
 
-	</div>
-	<script src="js/main.js"></script>
-</body>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
 
 </html>
