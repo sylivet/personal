@@ -8,7 +8,6 @@ body {
   line-height: 1.5;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
-  -webkit-text-size-adjust: 100% !important;
 }
 body h1 {
   font-size: 36px;
@@ -1726,6 +1725,9 @@ figure img {
     display: none;
   }
   /* footer */
+  .contact-info-bottom li p {
+    -webkit-text-size-adjust: 100% !important;
+  }
   .contact {
     display: block;
   }
