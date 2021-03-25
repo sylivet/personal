@@ -8,7 +8,7 @@ body {
   line-height: 1.5;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100% !important;
 }
 body h1 {
   font-size: 36px;
