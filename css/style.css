@@ -274,7 +274,7 @@ header {
 }
 
 footer {
-  font-size: 14px !important;
+  font-size: 14px;
   color: white;
   background-color: black;
 }
@@ -1728,6 +1728,9 @@ figure img {
     display: none;
   }
   /* footer */
+  .contact-info-bottom li p {
+    font-size: 14px !important;
+  }
   .contact {
     display: block;
   }
