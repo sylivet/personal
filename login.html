@@ -31,7 +31,7 @@
       <div class="login">
         <div class="container">
           <div id="signUp" class="-none">
-            <form >
+            <form>
               <h1>註冊會員</h1>
               <div class="socialLogin">
                 <a href="#"
@@ -40,15 +40,23 @@
                 <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
               </div>
-              <input type="text" placeholder="姓名" />
-              <input type="email" placeholder="電子郵件" />
-              <input type="password" placeholder="密碼" />
+              <input type="text" placeholder="姓名" required />
+              <input
+                type="tel"
+                id="cellphone"
+                onkeyup="value = this.value.replace(/[^0-9]/g, '')"
+                maxlength="10"
+                placeholder="手機號碼"
+                required
+              />
+              <input type="email" placeholder="電子郵件" required />
+              <input type="password" placeholder="密碼" required />
               <button>註冊</button>
               <a class="ghost" onclick="logIn()">登入會員</a>
             </form>
           </div>
           <div id="signIn">
-            <form >
+            <form>
               <h1>登入會員</h1>
               <div class="socialLogin">
                 <a href="#"
@@ -57,8 +65,8 @@
                 <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
                 <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
               </div>
-              <input type="email" placeholder="電子郵件" />
-              <input type="password" placeholder="密碼" />
+              <input type="email" placeholder="電子郵件" required />
+              <input type="password" placeholder="密碼" required />
               <a href="#" onclick="prompt('請輸入你的電子郵件信箱')"
                 >忘記密碼？</a
               >
