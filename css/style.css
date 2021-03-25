@@ -8,6 +8,7 @@ body {
   line-height: 1.5;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
 body h1 {
   font-size: 36px;
@@ -317,9 +318,6 @@ footer .line {
 }
 .contact-info-bottom li:last-child {
   margin-left: 15px;
-}
-.contact-info-bottom li span {
-  vertical-align: middle;
 }
 
 .subscribe input[type="text"] {
@@ -1728,9 +1726,6 @@ figure img {
     display: none;
   }
   /* footer */
-  .contact-info-bottom li p {
-    font-size: 14px !important;
-  }
   .contact {
     display: block;
   }
