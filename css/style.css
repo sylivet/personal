@@ -1534,9 +1534,6 @@ figure img {
 .sharing span {
   cursor: pointer;
 }
-.sharing span:hover {
-  color: #862633;
-}
 
 .sharing-main a,
 .replyArea a {
