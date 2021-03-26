@@ -8,7 +8,9 @@ body {
   line-height: 1.5;
   font-family: "Noto Sans TC", sans-serif;
   font-size: 16px;
+  -webkit-text-size-adjust: 100%;
 }
+
 body h1 {
   font-size: 36px;
 }
@@ -305,6 +307,12 @@ footer .line {
 .contact-info-bottom li {
   display: flex;
 }
+
+.contact-info-bottom a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
 .contact-info-top li:last-child {
   margin-left: 30px;
 }
@@ -312,7 +320,8 @@ footer .line {
   vertical-align: super;
 }
 .contact-info-top li p,
-.contact-info-bottom li p {
+.contact-info-bottom li p,
+.contact-info-bottom li a {
   margin-left: 10px;
 }
 .contact-info-bottom li:last-child {
@@ -1725,9 +1734,6 @@ figure img {
     display: none;
   }
   /* footer */
-  .contact-info-bottom li p {
-    -webkit-text-size-adjust: 100% !important;
-  }
   .contact {
     display: block;
   }
